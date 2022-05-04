@@ -64,14 +64,23 @@ Created by pixpalette.com - online design magazine -->
                         
                     <div class="form-group">
                         <label for="fakultas">Fakultas<span class="text-danger">*</span></label>
-                            <select name="fakultas" class="form-control form-control-user" required="">
+                            <select name="fakultas" id="fakultas" class="form-control form-control-user" required="">
                                 <option>--Pilih Fakultas--</option>
+                                <?php
+                                if (isset($fakultas) and (count($fakultas) > 0)){
+                                    foreach ($fakultas as $key => $fa){
+                                        ?>
+                                        <option value=<?= $fa->id_fakultas;?>><?= $fa->nama_fakultas; ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </select>
                         </div>
 
                         <div class="form-group">
                         <label for="prodi">Program Studi<span class="text-danger">*</span></label>
-                            <select name="prodi" class="form-control form-control-user" required="">
+                            <select name="prodi" id="prodi" class="form-control form-control-user" required="">
                                 <option>--Pilih Program Studi--</option>
                             </select>
                         </div>
