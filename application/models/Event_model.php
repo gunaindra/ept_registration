@@ -8,7 +8,13 @@ class Event_model extends CI_Model
       parent::__construct();
    }
 
-   public function get(){ # kondisi = array();
+   public function get($id_event=null){
+      $this->db->from("tbl_event");
+      $this->db->where($id_event);
+      return $this->db->get();
+   }
+
+   public function get_list(){ # kondisi = array();
       $this->db->select('te.id_event, DATE_FORMAT(te.tanggal_event, "%e %M %Y") AS tanggal_event, te.venue, COUNT(te.id_event) AS total, te.kuota - COUNT(te.id_event) AS sisa_kuota');
       $this->db->from('tbl_event AS te');
       $this->db->join('tbl_registrant as tr', 'te.id_event = tr.id_event');

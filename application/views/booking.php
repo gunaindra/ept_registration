@@ -43,7 +43,7 @@ Created by pixpalette.com - online design magazine -->
             <!-- /.col end-->
         </div>
         <!-- row end-->
-        <div class="row">
+        <div class="row" id="view_page">
             <div class="col-lg-12">
                         <div class="table-responsive">
                             <table class="table">
@@ -118,13 +118,8 @@ Created by pixpalette.com - online design magazine -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/allscript.js"></script>
+    <!-- <script src="<?php echo base_url(); ?>assets/js/allscript.js"></script> -->
+    <script src="<?php echo base_url(); ?>assets/custom/js/booking.js" type="text/javascript"></script>
   </body>
-<script type="text/javascript">
-$( document ).ready(function() {
-    $("body").on('click', '.register', function(){
-        alert($(this).val());
-    })
-});
-</script>
+
 </html>
