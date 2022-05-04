@@ -7,7 +7,7 @@ Created by pixpalette.com - online design magazine -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Stage- Bootstrap one page Event ticket booking theme</title>
+    <title>English Proficency Test | Lembaga Bahasa Widyatama</title>
 
     <!-- Bootstrap -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -32,11 +32,11 @@ Created by pixpalette.com - online design magazine -->
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <div class="title-text">
-                        <h2>Event Schedule</h2>
+                        <h2>Jadwal English Prociency Tests</h2>
+                        <h2>Lembaga Bahasa Widyatama</h2>
                     </div>
                     <p>
-                        In ludus latine mea, eos paulo quaestio an. Meis possit ea sit. Vidisse molestie<br />
-                        cum te, sea lorem instructior at.
+                        Silahkan pilih jadwal test yang masih tersedia dibawah ini dan registrasikan pada tanggal yang tersedia tersebut.
                     </p>
                 </div>
             </div>
@@ -91,7 +91,7 @@ Created by pixpalette.com - online design magazine -->
                                             <?php
                                             }else{ ?>
                                             <div class="primary-btn">
-                                                <button class="btn btn-primary register" value=<?= $ev->id_event?> id="register" name="register">Register</button>
+                                                <a class="btn btn-primary register" type="submit" href="<?php echo base_url();?>booking/register/<?= $ev->id_event;?>" id="register" name="register">Register</a>
                                             </div>
                                             <?php
                                             }?>

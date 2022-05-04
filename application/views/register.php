@@ -25,7 +25,22 @@ Created by pixpalette.com - online design magazine -->
   </head>
   <body>
       <div class="col-lg-12">
-      <form method="POST" action="<?php echo base_url(); ?>user/simpandata" enctype="multipart/form-data">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <div class="title-text">
+                        <h2>Formulir Pendaftaran</h2>
+                        <h3>English Profiency Test Lembaga Bahasa Widyatama</h3>
+                    </div>
+                    <p>
+                        Silahkan isi formulir dibawah ini.
+                    </p>
+                </div>
+            </div>
+            <!-- /.col end-->
+        </div>
+      <form method="POST" id="form_registrasi">
             <div class="card shadow-sm mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">Registrasi Test </h6>
@@ -94,7 +109,9 @@ Created by pixpalette.com - online design magazine -->
             </div>
         </form>
       </div>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
