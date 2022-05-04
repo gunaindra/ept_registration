@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/booking';
+$config['base_url'] = 'https://6272467621d16170ec04ce74--wonderful-pasca-f1e8ae.netlify.app/';
 
 /*
 |--------------------------------------------------------------------------
